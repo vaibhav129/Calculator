@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
   <title>Calculator</title>
-  <link rel="stylesheet" href="light.css" id="theme" />
+  <link rel="stylesheet" href="light.css" id="the" />
     <script src="change.js"></script>
 </head>
-
+ 
 <body>
   <div class="main">
   <div >
-        <button onclick="color()" id="dark-mode">
+        <button onclick="color()" id="dark">
           Dark theme
         </button>
       </div>
     <div class="main1">
-    
-
-      <div class="first-row">
+ 
+      <div class="first">
         <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
         <input type="button" value="C" onclick="clearScreen()" id="clear" />
       </div>
@@ -41,14 +40,11 @@
       </div>
       <div class="fifth">
         <input type="button" value="/" id="operation5"onclick="calculate('/')" />
-
         <input type="button" value="0" id="zero" onclick="calculate(0)" />
         <input type="button" value="." id="dot" onclick="calculate('.')" />
         <input type="button" value="=" id="sum" onclick="result.value = eval(result.value)" />
       </div>
-      
     </div>
   </div>
 </body>
-
 </html>
